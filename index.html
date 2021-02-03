@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Simon Game</title>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
-  </head>
+    <link rel="stylesheet" href="css/popup.css">
+</head>
 
-  <body>
-    <button id="information">
-      <i class="far fa-question-circle fa-2x"></i></i>
+<body>
+    <button class="box" id="information">
+      <a class="button" href="#popup1"><i class="far fa-question-circle fa-2x"></i></a>
     </button>
     <div id="outer-circle">
-      <div id="button_container">
-        <div id="topleft"></div>
-        <div id="topright"></div>
-        <div id="bottomleft"></div>
-        <div id="bottomright"></div>
-      </div>
-      <div id="inner-circle">
-        <div id="title" class="font-effect-emboss">SIMON</div>
-        <div id="switches">
-          <button class="button" id="start">Start</button>
-          <button class="button" id="reset">Reset</button>
-          <input type="checkbox" class="toggle" id="on" disabled />
+        <div id="button_container">
+            <div id="topleft"></div>
+            <div id="topright"></div>
+            <div id="bottomleft"></div>
+            <div id="bottomright"></div>
         </div>
-        <div class="text1"><span /><span>Statut</span></div>
-        <div id="turn"></div>
-        <div class="text2">
-          COUNT
+        <div id="inner-circle">
+            <div id="title" class="font-effect-emboss">SIMON</div>
+            <div id="switches">
+                <button class="button" id="start">Start</button>
+                <button class="button" id="reset">Reset</button>
+                <input type="checkbox" class="toggle" id="on" disabled />
+            </div>
+            <div class="text1"><span /><span>Statut</span></div>
+            <div id="turn"></div>
+            <div class="text2">
+                COUNT
+            </div>
         </div>
-      </div>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Le jeu simon</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                Le but du jeu est simple, une séquence de touche à reproduire va s'effectuer, à chaque fois que vous réussirez une séquence. Chaque fois que le joueur reproduit correctement la séquence, le jeu ajoute une nouvelle couleur.<br>A vous de
+                jouez !
+            </div>
+        </div>
     </div>
 
     <script src="js/index.js"></script>
-  </body>
+</body>
+
 </html>

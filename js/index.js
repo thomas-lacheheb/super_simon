@@ -3,8 +3,9 @@ const $buttonContainer = document.querySelector("#button_container");
 const $divButtons = $buttonContainer.querySelectorAll("div");
 
 $buttons.forEach((button) => {
-    button.addEventListener("click", ({ target: { innerHTML = "" } }) => {
-        console.log(innerHTML);
+    button.addEventListener("click", ({ target: { id = "" } }) => {
+        if (id === "start") return StartGame();
+        if (id === "reset") return ResetGame();
     });
 });
 
@@ -13,3 +14,11 @@ $divButtons.forEach((button) => {
         console.log(id);
     });
 });
+
+function StartGame() {
+    console.log("Start the game");
+}
+
+function ResetGame() {
+    console.log("Reset the game");
+}
