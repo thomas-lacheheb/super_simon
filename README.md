@@ -1,2 +1,2 @@
-# super_simon
+# Super_Simon
 Evaluation Javascript
