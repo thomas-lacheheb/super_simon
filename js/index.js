@@ -12,6 +12,7 @@ $buttons.forEach((button) => {
 $divButtons.forEach((button) => {
     button.addEventListener("click", ({ target: { id = "" } }) => {
         console.log(id);
+        ClickOnButton(id);
     });
 });
 
@@ -21,4 +22,9 @@ function StartGame() {
 
 function ResetGame() {
     console.log("Reset the game");
+}
+
+function ClickOnButton(id) {
+    document.querySelector("#"+id).className = "activated";
+    setTimeout(function(){ document.querySelector("#"+id).className = ""; }, 100);
 }

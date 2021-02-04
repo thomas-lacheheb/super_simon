@@ -156,3 +156,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+
+.activated {
+    opacity: .5;
+}
