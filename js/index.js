@@ -1,6 +1,8 @@
 const $buttons = document.querySelectorAll("button");
 const $buttonContainer = document.querySelector("#button_container");
 const $divButtons = $buttonContainer.querySelectorAll("div");
+const nbTouche = document.querySelector("#screen1");
+const nbTour = document.querySelector("#screen2");
 
 $buttons.forEach((button) => {
     button.addEventListener("click", ({ target: { id = "" } }) => {
@@ -11,17 +13,18 @@ $buttons.forEach((button) => {
 
 $divButtons.forEach((button) => {
     button.addEventListener("click", ({ target: { id = "" } }) => {
-        console.log(id);
         ClickOnButton(id);
     });
 });
 
 function StartGame() {
-    console.log("Start the game");
+    nbTouche.innerHTML = "-";
+    nbTour.innerHTML = "1";
 }
 
 function ResetGame() {
-    console.log("Reset the game");
+    nbTouche.innerHTML = "";
+    nbTour.innerHTML = "";
 }
 
 function ClickOnButton(id) {

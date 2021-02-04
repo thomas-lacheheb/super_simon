@@ -14,7 +14,14 @@
 .text2 {
     position: absolute;
     font-family: "Original Surfer", cursive;
-    margin-left: 83px;
+    margin-left: 50px;
+    margin-top: 197px;
+}
+
+.text3 {
+    position: absolute;
+    font-family: "Original Surfer", cursive;
+    margin-left: 130px;
     margin-top: 197px;
 }
 
@@ -41,7 +48,7 @@
     float: right;
 }
 
-#turn {
+#screen1 {
     position: absolute;
     background: #330000;
     color: red;
@@ -49,7 +56,22 @@
     font-size: 20px;
     height: 30px;
     width: 50px;
-    margin-left: 90px;
+    margin-left: 50px;
+    margin-top: 170px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+#screen2 {
+    position: absolute;
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    margin-left: 135px;
     margin-top: 170px;
     text-align: center;
     vertical-align: middle;
